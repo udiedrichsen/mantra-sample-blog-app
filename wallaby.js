@@ -4,10 +4,15 @@ module.exports = function (wallaby) {
       'client/modules/**/components/*.jsx',
       'client/modules/**/actions/*.js',
       'client/modules/**/containers/*.js',
-      'client/modules/**/libs/*.js'
+      'client/modules/**/lib/*.js',
+      'modules/**/client/components/*.jsx',
+      'modules/**/client/actions/*.js',
+      'modules/**/client/containers/*.js',
+      'modules/**/client/lib/*.js'
     ],
     tests: [
-      'client/**/tests/*.js'
+      'client/**/tests/*.js',
+      'modules/**/client/**/tests/*.js'
     ],
     compilers: {
        '**/*.js*': wallaby.compilers.babel({

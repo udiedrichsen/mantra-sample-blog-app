@@ -14,6 +14,7 @@ const Layout = ({content = () => null }) => (
 
     <footer>
     <small>Built with <a href='https://github.com/kadirahq/mantra'>Mantra</a> & Meteor.</small>
+    <small><a href='https://github.com/udiedrichsen/mantra-sample-blog-app'>Github repo</a></small>
     </footer>
   </div>
 );
