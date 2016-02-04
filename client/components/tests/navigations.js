@@ -11,10 +11,24 @@ describe('core.components.navigation', () => {
     expect(homeLink.prop('href')).to.be.equal('/');
   });
 
-  it('should contain a link to create a new post', () => {
+  it('should contain a link to post list', () => {
     const el = shallow(<Navigation />);
     const newPostLink = el.find('a').at(1);
+    expect(newPostLink.text()).to.be.equal('Post list');
+    expect(newPostLink.prop('href')).to.be.equal('/post-list');
+  });
+
+  it('should contain a link to create a new post', () => {
+    const el = shallow(<Navigation />);
+    const newPostLink = el.find('a').at(2);
     expect(newPostLink.text()).to.be.equal('New Post');
     expect(newPostLink.prop('href')).to.be.equal('/new-post');
+  });
+
+  it('should contain a link to about', () => {
+    const el = shallow(<Navigation />);
+    const newPostLink = el.find('a').at(3);
+    expect(newPostLink.text()).to.be.equal('About');
+    expect(newPostLink.prop('href')).to.be.equal('/about');
   });
 });

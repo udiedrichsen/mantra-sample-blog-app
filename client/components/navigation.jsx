@@ -6,8 +6,7 @@ const Navigation = () => (
     <a href="/">Home</a> |
     <a href="/post-list">Post list</a> |
     <a href="/new-post">New Post</a> |
-    <a href="/About">About</a> |
-    <a href="/Profile">Profile</a>
+    <a href="/about">About</a> |
   </div>
 );
 

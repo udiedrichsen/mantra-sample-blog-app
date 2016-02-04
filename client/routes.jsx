@@ -1,10 +1,13 @@
 import React from 'react';
 import {mount} from 'react-mounter';
 
-import MainLayout from './components/main_layout.jsx';
-import PostList from './containers/postlist';
-import Post from './containers/post';
-import NewPost from './containers/newpost';
+import MainLayout from '/client/components/main_layout.jsx';
+import About from '/client/components/about.jsx';
+
+import Post from '/modules/Blog/client/posts/containers/post';
+import PostList from '/modules/Blog/client/posts/containers/postlist';
+import NewPost from '/modules/Blog/client/posts/containers/newpost';
+
 
 export default function (injectDeps, {FlowRouter}) {
   const MainLayoutCtx = injectDeps(MainLayout);
@@ -41,6 +44,15 @@ export default function (injectDeps, {FlowRouter}) {
     action() {
       mount(MainLayoutCtx, {
         content: () => (<NewPost/>)
+      });
+    }
+  });
+
+  FlowRouter.route('/about', {
+    name: 'about',
+    action() {
+      mount(MainLayoutCtx, {
+        content: () => (<About/>)
       });
     }
   });
