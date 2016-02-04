@@ -1,4 +1,4 @@
-import {Posts, Comments} from '../../lib/collections';
+import Collections from '../../lib/collections';
 import {Meteor} from 'meteor/meteor';
 import {check} from 'meteor/check';
 
@@ -15,7 +15,7 @@ export default function () {
       // XXX: Do some user authorization
       const createdAt = new Date();
       const post = {_id, title, content, createdAt};
-      Posts.insert(post);
+      Collections.Posts.insert(post);
     }
   });
 
@@ -32,7 +32,7 @@ export default function () {
       const createdAt = new Date();
       const author = 'The User';
       const comment = {_id, postId, author, text, createdAt};
-      Comments.insert(comment);
+      Collections.Comments.insert(comment);
     }
   });
 }
