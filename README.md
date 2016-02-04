@@ -5,6 +5,7 @@
 - All module code must initialized thought the app code
 - Each module can have a client,libs and server folder
 - The client module folder can have multiple parts (Blog posts and comment)
+- For each collection we have now one javascript file. For use of schema. See org repo issue number 31
 
 Everything else is the same. Main change is decoupling the routing and Navigation
 to the App and having the module concept also for the server.
