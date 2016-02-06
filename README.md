@@ -6,12 +6,15 @@
 - Each module can have a client,libs and server folder
 - The client module folder can have multiple parts (Blog posts and comment)
 - For each collection we have now one javascript file. For use of schema. See org repo issue number 31
+- Add material-ui npm package
+- Removed wallaby.js because it causes a problem with material-ui
 
 Everything else is the same. Main change is decoupling the routing and Navigation
 to the App and having the module concept also for the server.
 
 ### Next steps
-- Add another module
+- Add material-ui accounting
+- add graphql
 
 ## A Sample Blog App Written in Mantra
 
