@@ -3,6 +3,7 @@ import {mount} from 'react-mounter';
 
 import MainLayout from '/client/components/main_layout.jsx';
 import About from '/client/components/about.jsx';
+import CardExampleWithAvatar from '/client/components/CardExampleWithAvatar.jsx';
 
 import Post from '/modules/Blog/client/posts/containers/post';
 import PostList from '/modules/Blog/client/posts/containers/postlist';
@@ -53,6 +54,15 @@ export default function (injectDeps, {FlowRouter}) {
     action() {
       mount(MainLayoutCtx, {
         content: () => (<About/>)
+      });
+    }
+  });
+
+  FlowRouter.route('/card', {
+    name: 'card',
+    action() {
+      mount(MainLayoutCtx, {
+        content: () => (<CardExampleWithAvatar/>)
       });
     }
   });

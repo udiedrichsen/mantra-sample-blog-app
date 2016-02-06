@@ -6,7 +6,8 @@
     "lintfix": "npm run lint -- --fix",
     "testonly": "mocha client/**/tests/**/*.js modules/**/client/**/tests/**/*.js --compilers js:babel-core/register",
     "test": "npm run lint && npm run testonly",
-    "test-watch": "npm run testonly -- --watch --watch-extensions js,jsx"
+    "test-watch": "npm run testonly -- --watch --watch-extensions js,jsx",
+    "clean" : "rm -rf node_modules;meteor reset;npm install"
   },
   "devDependencies": {
     "babel-core": "6.x.x",
@@ -26,10 +27,12 @@
   },
   "dependencies": {
     "domready": "^1.0.8",
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
     "mantra-core": "^1.2.0",
-    "react-mounter": "^1.0.0"
+    "react-mounter": "^1.0.0",
+    "material-ui": "^0.14.4",
+    "react-tap-event-plugin": "^0.2.2"
   },
   "private": true
 }

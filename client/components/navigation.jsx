@@ -7,6 +7,7 @@ const Navigation = () => (
     <a href="/post-list">Post list</a> |
     <a href="/new-post">New Post</a> |
     <a href="/about">About</a> |
+      <a href="/card">Card</a> |
   </div>
 );
 
