@@ -7,7 +7,9 @@
     "testonly": "mocha client/**/tests/**/*.js modules/**/client/**/tests/**/*.js --compilers js:babel-core/register",
     "test": "npm run lint && npm run testonly",
     "test-watch": "npm run testonly -- --watch --watch-extensions js,jsx",
-    "clean" : "rm -rf node_modules;meteor reset;npm install"
+    "clean" : "rm -rf node_modules;meteor reset;npm install",
+    "docs-gen" : "yuidoc .",
+    "docs-show" : ".scripts/yuidoc_show.sh"
   },
   "devDependencies": {
     "babel-core": "6.x.x",

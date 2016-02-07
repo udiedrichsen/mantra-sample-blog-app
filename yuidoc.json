@@ -1,0 +1,11 @@
+{
+  "name": "MantraCS",
+  "description": "The MantraCS example project",
+  "port": "3030",
+  "version": "v0.2.0-4",
+  "options": {
+    "outdir": "./.docs",
+    "exclude": ".git,.meteor,.build,tests,node_modules",
+    "path": ["./client/","./server/","./modules/"]
+  }
+}
